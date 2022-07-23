@@ -1,0 +1,43 @@
+Page_Layout:
+<Page_Layout>:
+    Page_1:
+    Page_2:
+    Page_3:
+
+Relative_Practice:
+
+<Relative_Practice>:
+    RelativeLayout:
+        size_hint: .40, .40
+        pos: 100, 100
+        Button:
+            text: "Child"
+            size_hint: .40, .40
+            pos_hint: {"x": 0, "bottom": 1}
+
+scroller:
+
+<scroller@ScrollView>:
+    bar_margin: 5
+    bar_color: .3, .4, .5, 1
+    stackinterface:
+        size_hint: 1, None
+        height: self.minimun_height
+
+<stackinterface>:
+    padding: [50, 0, 40, 0]
+
+<Interface>:
+    # "left", "center", "right"
+    anchor_x: "center"
+    # "top", "center", "bottom"
+    anchor_y: "center"
+    BoxLayout:
+        size_hint: .30, .20
+        Button:
+            text: "1"
+            size_hint: .25, 1
+
+        Button:
+            text: "2"
+

@@ -1,0 +1,24 @@
+Game:
+<Game>:
+    orientation: "vertical"
+    ScrollView:
+        Buttons:
+        id: stacker
+        size_hint: 1, None
+        height: self.minimun_height
+    BoxLayout:
+        size_hint: 1, .2
+        Button:
+            text: "Create"
+            on_press: root.created_btn(stacker)
+            background_color: .3, .4, .5, 1
+            background_normal: ""
+        Button:
+            text: "Remove"
+            on_pass: root.remove_btn(stacker)
+            background_color: .6, .7, .8, 1
+            background_normal: ""
+
+<Buttons>:
+    padding: dp(10)
+    spacing(10)

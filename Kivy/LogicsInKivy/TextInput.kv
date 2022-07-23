@@ -1,0 +1,14 @@
+LogicalInterface:
+
+<LogicalInterface>:
+    Button:
+        text: "Press me"
+        on_press: root.OnPressing(label)
+        on_release: root.OnReleasing(label)
+    Label:
+        id: label
+        text: "Hello World"
+    TextInput:
+        id: input
+        multiline: False
+        text: ""

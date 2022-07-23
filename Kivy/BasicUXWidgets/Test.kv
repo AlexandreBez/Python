@@ -1,0 +1,20 @@
+<Interface>:
+Interface:
+    Label:
+        markup: True
+        text: "Hello [b]World[/b]!!"
+        pos: dp(200), dp(200)
+        size: 200, 100
+        font_size: 20
+
+    Button:
+        text: "Hello World!!"
+        pos: 300, 300
+        size: 200, 100
+
+    TextInput:
+        text: "Name Here"
+        pos: 100, 100
+        size: 200, 100
+        multiline: False
+        on_text_validate: root.On_Enter_Pressed()

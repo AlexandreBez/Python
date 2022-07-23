@@ -1,0 +1,26 @@
+scroller:
+
+<scroller@ScrollView>:
+    bar_margin: 5
+    bar_color: .3, .4, .5, 1
+    stackinterface:
+        size_hint: 1, None
+        height: self.minimun_height
+
+<stackinterface>:
+    padding: [50, 0, 40, 0]
+
+<Interface>:
+    # "left", "center", "right"
+    anchor_x: "center"
+    # "top", "center", "bottom"
+    anchor_y: "center"
+    BoxLayout:
+        size_hint: .30, .20
+        Button:
+            text: "1"
+            size_hint: .25, 1
+
+        Button:
+            text: "2"
+

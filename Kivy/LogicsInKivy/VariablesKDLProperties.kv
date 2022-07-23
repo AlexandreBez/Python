@@ -1,0 +1,22 @@
+Variables:
+<Variables>:
+    #: set txt 40
+    Button:
+        on_press: root.pressing()
+    Label:
+        text: root._text_
+        font_size: txt
+
+LogicalInterface:
+<LogicalInterface>:
+    Button:
+        text: "Press me"
+        on_press: root.OnPressing(label)
+        on_release: root.OnReleasing(label)
+    Label:
+        id: label
+        text: "Hello World"
+    TextInput:
+        id: input
+        multiline: False
+        text: ""
